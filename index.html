@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima Agora 🌤️</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Clima Agora 🌞</h1>
+      <p>Seu portal confiável para atualizações climáticas 🌦️.</p>
+    </header>
+
+    <main class="main-content">
+      <section class="search-section">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Digite o nome da cidade 🏙️"
+          aria-label="Nome da cidade"
+        />
+        <button id="searchButton">Buscar Clima 🌍</button>
+      </section>
+
+      <section class="weather-display" id="weatherDisplay">
+        <h2>Informações do Clima 🌦️</h2>
+        <p id="weatherInfo">
+          Digite o nome de uma cidade para obter os detalhes do clima ⛅.
+        </p>
+        <div id="weatherDetails" style="display: none">
+          <p><strong>Cidade 🏙️:</strong> <span id="cityName"></span></p>
+          <p>
+            <strong>Temperatura 🌡️:</strong> <span id="temperature"></span>°C
+          </p>
+          <p><strong>Descrição ☁️:</strong> <span id="description"></span></p>
+          <img
+            id="weatherIcon"
+            alt="Ícone do Clima"
+            src=""
+            style="width: 50px; height: 50px"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>

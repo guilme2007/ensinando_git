@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Estilo do cabeçalho */
+  .header {
+    background-color: #005f73;
+    color: white;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo da seção de busca */
+  .search-section {
+    margin: 20px 0;
+  }
+  
+  #cityInput {
+    padding: 10px;
+    width: 250px;
+    font-size: 1rem;
+    border: 2px solid #005f73;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #searchButton {
+    padding: 10px 20px;
+    background-color: #247a96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #searchButton:hover {
+    background-color: #021e24;
+  }
+  
+  /* Estilo da seção de exibição do clima */
+  .weather-display {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  #weatherDetails {
+    display: none; 
+    animation: fadeIn 1s ease-out; /* Animação fade-in */
+  }
+  
+  #weatherInfo {
+    font-size: 1.2rem;
+    color: #888;
+    display: block;
+  }
+  
+  /* Estilo do ícone do clima */
+  #weatherIcon {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Animação de fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Estilo do rodapé */
+  .footer {
+    background-color: #005f73;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    #cityInput {
+      width: 200px;
+    }
+  
+    #searchButton {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .header h1 {
+      font-size: 2rem;
+    }
+  }
+  
